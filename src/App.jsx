@@ -3,9 +3,9 @@ import Header from './components/header/Header';
 import Nav from './components/nav/Nav';
 import Experience from './components/experience/Experience';
 import Footer from './components/footer/Footer';
-import Testimonials from './components/testimonials/Testimonials';
 import Contact from './components/contact/Contact';
 import About from './components/about/About';
+import Portfolio from "./components/portfolio/Portfolio";
 
 
 const App = () => {
@@ -15,7 +15,7 @@ const App = () => {
         <Nav/>
         <About/>
         <Experience/>
-        <Testimonials/>
+        <Portfolio/>
         <Contact/>
         <Footer/>
       </>

@@ -12,10 +12,10 @@
 }
 
 :root {
-    --color-bg: #85d4e8;
-    --color-bg-variant: #228095;
-    --color-primary: #b153c3;
-    --color-primary-variant: #4f165a;
+    --color-bg: #0d1321;
+    --color-bg-variant: #1d2d44;
+    --color-primary: #f0ebd8;
+    --color-primary-variant: #748cab;
     --color-white: #fff;
     --color-black: #000;
     --color-light: rgba(255,255,255,0.6);
@@ -38,9 +38,10 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     background: var(--color-bg);
-    color: var(--color--black);
+    color: var(--color-primary);
     line-height: 1.7;
-    background-image: url(../src/assets/triangles.svg);
+    background-color: var(--color-bg);
+    /* background-image: url(../src/assets/triangles.svg); */
     /*Make background fit horizontally but scroll vertically*/
     background-size: 100% auto;
     
@@ -64,6 +65,7 @@ h1 {
 
 section {
     margin-top: 8rem;
+    height: 120vh;
 }
 
 section > h2, 
@@ -91,7 +93,7 @@ a {
 }
 
 a:hover {
-    color: var(--color-black);
+    color: var(--color-primary-variant);
 }
 
 .btn {
@@ -100,23 +102,28 @@ a:hover {
     color: var(--color-primary);
     padding: 0.75rem 1.2rem;
     cursor: pointer;
-    border: 1px solid var(--color-primary);
+    border-radius: 30px;
+    border: 2px solid var(--color-primary);
     transition: var(--transition);
     -webkit-transition: var(--transition);
     -moz-transition: var(--transition);
     -ms-transition: var(--transition);
     -o-transition: var(--transition);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
 }
 
 .btn:hover {
-    background: var(--color-black);
-    color: var(--color-bg);
+    background: var(--color-primary);
+    color: var(--color-bg-variant);
     border-color: transparent;
 }
 
 .btn-primary {
-    background: var(--color-primary);
-    color: var(--color-bg);
+    background: var(--color-bg-variant);
+    color: var(--color-primary);
 }
 
 img {
