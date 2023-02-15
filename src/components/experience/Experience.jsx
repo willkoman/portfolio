@@ -1,6 +1,6 @@
 import React from "react";
 import './experience.css';
-import {RiCheckboxBlankCircleFill} from "react-icons/ri";
+import {BsFillPatchCheckFill} from "react-icons/bs";
 
 const Experience = () => {
     return (
@@ -13,22 +13,22 @@ const Experience = () => {
                         <h3>Coding</h3>
                         <div className="experience__content">
                             <article className="experience__details">
-                                <RiCheckboxBlankCircleFill className="experience__icon"/>
+                                <BsFillPatchCheckFill className="experience__details-icon"/>
                                 <h4>C#</h4>
                                 <small className="text-light">Skilled</small>
                             </article>
                             <article className="experience__details">
-                                <RiCheckboxBlankCircleFill className="experience__icon"/>
+                                <BsFillPatchCheckFill className="experience__details-icon"/>
                                 <h4>Java</h4>
                                 <small className="text-light">Experienced</small>
                             </article>
                             <article className="experience__details">
-                                <RiCheckboxBlankCircleFill className="experience__icon"/>
+                                <BsFillPatchCheckFill className="experience__details-icon"/>
                                 <h4>JS</h4>
                                 <small className="text-light">Intermediate</small>
                             </article>
                             <article className="experience__details">
-                                <RiCheckboxBlankCircleFill className="experience__icon"/>
+                                <BsFillPatchCheckFill className="experience__details-icon"/>
                                 <h4>React</h4>
                                 <small className="text-light">Intermediate</small>
                             </article>
@@ -40,22 +40,22 @@ const Experience = () => {
                         <h3>Design</h3>
                         <div className="experience__content">
                             <article className="experience__details">
-                                <RiCheckboxBlankCircleFill className="experience__icon"/>
+                                <BsFillPatchCheckFill className="experience__details-icon"/>
                                 <h4>Photoshop</h4>
                                 <small className="text-light">Skilled</small>
                             </article>
                             <article className="experience__details">
-                                <RiCheckboxBlankCircleFill className="experience__icon"/>
+                                <BsFillPatchCheckFill className="experience__details-icon"/>
                                 <h4>After Effects</h4>
                                 <small className="text-light">Experienced</small>
                             </article>
                             <article className="experience__details">
-                                <RiCheckboxBlankCircleFill className="experience__icon"/>
+                                <BsFillPatchCheckFill className="experience__details-icon"/>
                                 <h4>3DS MAX</h4>
                                 <small className="text-light">Intermediate</small>
                             </article>
                             <article className="experience__details">
-                                <RiCheckboxBlankCircleFill className="experience__icon"/>
+                                <BsFillPatchCheckFill className="experience__details-icon"/>
                                 <h4>Fruity Loops</h4>
                                 <small className="text-light">Intermediate</small>
                             </article>
