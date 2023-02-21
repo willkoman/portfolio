@@ -136,7 +136,7 @@ img {
 
 @media screen and (max-width: 992px) {
     .container {
-        width: var(--container-width-md);
+        width: var(--container-width-lg);
     }
 
     section {

@@ -1,5 +1,5 @@
 #experience {
-    margin-top: 200px; 
+    margin-top: 250px; 
     height: 100vh; 
 
 background: var(--color-bg);
@@ -11,6 +11,7 @@ background: var(--color-bg);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0rem; 
+    text-align: center;
 
 }
 
@@ -18,7 +19,7 @@ background: var(--color-bg);
     display: grid;
     grid-template-columns:repeat(1, 1fr);
     gap: 1rem;
-
+    text-align: center;
     background: var(--color-bg-variant);
     padding: 2.4rem 5rem;
     border-radius: 2rem;
@@ -46,10 +47,12 @@ background: var(--color-bg);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
+    text-align: center;
 }
 
 .experience_details{
     display: grid;
+    text-align: center;
     gap: 1rem;
 }
 
@@ -63,29 +66,29 @@ background: var(--color-bg);
     .experience__container{
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
+        text-align: center;
     }
     .experience__container > div {
-        padding: 2.0rem 2rem;
+        padding: 2rem 1rem;
         text-align: center;
         margin: 0 auto;
         width: 100%;
     }
     .experience__content{
         padding: 1rem;
+        text-align: center;
     }
 
 
-/* @media screen and (max-width: 600px) {
-    .experience__container{
-        grid-template-columns: repeat(1, 1fr);
-        gap: 1rem;
+ @media screen and (max-width: 690px) {
+    #experience{
+        margin-top:  50vh;
     }
-    .experience__container > div {
-        padding: 2.0rem 2rem;
-        width: 80%;
-        margin: 0 auto;
+    
+}
+@media screen and (max-width: 380px) {
+    #experience{
+        margin-top:  95vh;
     }
-    .experience__content{
-        padding: 1rem;
-    }
-} */
+    
+}

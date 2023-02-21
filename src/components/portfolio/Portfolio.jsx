@@ -6,11 +6,11 @@ import Loops from '../../assets/loops.png'
 
 const Portfolio = () => {
     return (
-        <section id="portfolio">
+        <section id="portfolio" className="portfolio__section">
             <h5>What have I made?</h5>
             <h2>Portfolio</h2>
             <div className="portfolio__container">
-                <div className="row">
+                <div className="port_row">
                     <div className="col-lg-12 portfolio-item">
                         <h3>Anagrammy</h3>
                         <a href="https://apps.apple.com/app/id1610449517/" target="_blank" rel="noopener noreferrer">
@@ -24,7 +24,7 @@ const Portfolio = () => {
                         <img src={Loops} alt="placeholder" />
                     </div>
                 </div>
-                <div className="row">
+                <div className="port_row">
                     <div className="col-lg-12 portfolio-item">
                         <h3>Living Room Render</h3>
                         <a href={LivingRoom} target="_blank" rel="noopener noreferrer">

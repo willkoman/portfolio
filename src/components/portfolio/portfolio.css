@@ -1,13 +1,23 @@
+.portfolio__section {
+    height: 90vh !important;
+    margin-top:8rem
+}
 .portfolio-item {
     display: block;
     border: 1px solid #ccc;
-    width: 30vh;
-    height: 30vh;
+    width: 10rem;
+    height: 10rem;
     text-align: center;
     margin: 0 auto;
     margin-top: 1rem;
     overflow: hidden;
     object-fit: contain;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 0rem 0rem 1rem rgba(29, 84, 121, 0.792);
 }
 
 .portfolio-item img {
@@ -15,6 +25,7 @@
     min-width: 100%;
     min-height: 100%
 }
+
 .portfolio__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
