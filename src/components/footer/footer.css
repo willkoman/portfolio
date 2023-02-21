@@ -5,8 +5,8 @@
     margin: 0;
     padding: 0;
     text-align: center;
-    margin-top: -20rem;
-    padding-bottom: 20rem;
+    padding-bottom: 10rem;
+
 }
 @media screen and (max-width: 980px) {
     .footer__text {
