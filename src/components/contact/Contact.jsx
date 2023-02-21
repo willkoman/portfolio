@@ -14,19 +14,19 @@ const Contact = () => {
                 <div className="row">
                     <div className="contact-item">
                         <h3>Send me an email</h3>
-                        <button className="btn" onClick={() => window.open("mailto:willko@willko.dev")}><AiFillMail/></button>
+                        <button className="btn" onClick={() => window.open("mailto:willko@willko.dev")}><p>Email</p><AiFillMail/></button>
                     </div>
                     <div className="contact-item">
                         <h3>Add me on LinkedIn</h3>
-                        <button className="btn" onClick={() => window.open("https://www.linkedin.com/in/william-krasnov/")}><SiLinkedin/></button>
+                        <button className="btn" onClick={() => window.open("https://www.linkedin.com/in/william-krasnov/")}><p>LinkedIn</p><SiLinkedin/></button>
                     </div>
                     <div className="contact-item">
                         <h3>Join my Discord</h3>
-                        <button className="btn discord" onClick={() => window.open("https://discord.gg/jjSJZJmKaB")}><SiDiscord/></button>
+                        <button className="btn discord" onClick={() => window.open("https://discord.gg/jjSJZJmKaB")}><p>Discord</p><SiDiscord/></button>
                     </div>
                     <div className="contact-item">
                         <h3>Text me on WhatsApp</h3>
-                        <button className="btn" onClick={() => window.open("https://wa.me/2672278466")}><SiWhatsapp/></button>
+                        <button className="btn" onClick={() => window.open("https://wa.me/2672278466")}><p>Whatapp</p><SiWhatsapp/></button>
                     </div>
                 </div>
             </div>

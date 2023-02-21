@@ -17,6 +17,7 @@
     grid-template: 1fr 1fr / 1fr 1fr;
     row-gap: 1rem;
     text-align: center;
+    box-sizing:content-box;
 }
 .btn{
     background: var(--color-bg);
@@ -25,6 +26,9 @@
     background: var(--color-primary);
     color: var(--color-bg-variant);
     border-color: transparent;
+}
+.btn > p{
+    font-size: 0;
 }
 
 @media screen and (min-width: 1150px) {
@@ -35,6 +39,7 @@
     }
     .row{
         height: 300px;
+        
     }
 }
 
@@ -42,9 +47,11 @@
     .row {
         grid-template: 0.5fr 0.5fr 0.5fr 0.5fr / 1fr;
         height: 400px;
+        
     }
     #contact{
-        margin-top:200px;
+        margin-top:100px;
         height: auto;
+        margin-bottom: 7rem; 
     }
 }

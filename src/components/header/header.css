@@ -1,5 +1,5 @@
 header {
-    padding-top: 7rem;
+    padding-top: 2rem;
     margin-top: -7rem;
     margin-bottom: 200px;
     height: auto;
@@ -39,6 +39,10 @@ header {
     -moz-transform: translateX(-25%);
     -ms-transform: translateX(-25%);
     -o-transform: translateX(-25%);
+}
+
+.header__socials > a > p {
+    font-size: 0;
 }
 
 /* .header__socials::after {

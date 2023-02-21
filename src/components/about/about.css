@@ -144,7 +144,7 @@
     .about__container{
         grid-template-columns: 1fr;
         gap:0px;
-        padding-bottom: 100px;
+        
     }
     .about__cards{
         grid-template-columns: 1fr;
