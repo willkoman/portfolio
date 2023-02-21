@@ -29,7 +29,7 @@ header {
     gap: 1.2rem;
     left:50%;
     transform: translateX(-25%);
-    bottom: -1rem;
+    bottom: 350px;
     padding: 0rem 0rem 0rem 0rem;
     z-index: 2;
     scale: 2.0;
@@ -80,7 +80,7 @@ header {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     header {
         height: 100vh;
     }
@@ -88,4 +88,7 @@ header {
     {
          display: none;
     }
+    .header__socials {
+        bottom: 300px;
+}
 }
