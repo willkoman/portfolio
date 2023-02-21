@@ -1,9 +1,9 @@
 #experience {
-    margin-top: 150px; 
+
     height: 100vh; 
 
     background: var(--color-bg);
-    margin-top: 45vh; 
+    margin-top: 65vh; 
 
 }
 .experience{
@@ -80,7 +80,7 @@
     }
 
 
- @media screen and (max-width: 690px) {
+ @media screen and (max-width: 960px) {
     #experience{
         margin-top: 80vh;
     }
