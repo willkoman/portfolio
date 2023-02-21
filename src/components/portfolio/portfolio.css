@@ -36,3 +36,9 @@
     margin-left: 20vh;
     margin-right: 20vh;
 }
+
+@media screen and (max-width: 768px) {
+    .portfolio__section{
+        margin-top:0vh;
+    }
+}
