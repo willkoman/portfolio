@@ -82,7 +82,11 @@ header {
     -o-transform: rotate(90deg);
 }
 
-
+@media screen and (min-width: 768px){
+    header {
+        height: 50vmax;
+    }
+}
 @media screen and (max-width: 768px) {
     header {
         height: 80vmax;
