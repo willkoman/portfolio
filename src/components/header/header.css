@@ -1,7 +1,7 @@
 header {
     height: 100vmax;
     padding-top: 7rem;
-    margin-top: -14rem;
+    margin-top: -7rem;
     margin-bottom: 10rem;
     overflow: visible !important;;
 }
@@ -97,6 +97,6 @@ header {
     }
     .header__socials {
         bottom: 300px;
-        top: 35rem;
+        top: 80vh;
 }
 }
