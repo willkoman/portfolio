@@ -1,14 +1,13 @@
 header {
-    height: 100vmax;
     padding-top: 7rem;
     margin-top: -7rem;
-    margin-bottom: 10rem;
+    margin-bottom: 200px;
+    height: auto;
     overflow: visible !important;;
 }
 
 .header__container {
     text-align: center;
-    height: 100%;
     position: relative;
 }
 
@@ -33,7 +32,7 @@ header {
     transform: translateX(-25%);
     bottom: 350px;
     top: 35rem;
-    padding: 2rem 0rem 0rem 0rem;
+
     z-index: 2;
     scale: 2.0;
     -webkit-transform: translateX(-25%);
@@ -82,21 +81,26 @@ header {
     -o-transform: rotate(90deg);
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1150px) {
     header {
-        height: 50vmax;
+        height: 400px;
+    }
+
+    .header__socials {
+        top: 600px;
     }
 }
-@media screen and (max-width: 768px) {
+
+
+@media screen and (max-width: 1149px) {
     header {
-        height: 80vmax;
+        height: 350px;
     }
     .scroll__down
     {
          display: none;
     }
     .header__socials {
-        bottom: 300px;
-        top: 80vh;
-}
+        top: 600px;
+    }
 }

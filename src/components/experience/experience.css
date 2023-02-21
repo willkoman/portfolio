@@ -3,7 +3,7 @@
     height: 100vh; 
 
     background: var(--color-bg);
-    margin-top: 220vh; 
+    margin-top: 200px; 
 
 }
 .experience{
@@ -83,29 +83,25 @@
 @media screen and (min-width: 1150px) {
     #experience{
         margin-top: 60vh;
+        height: auto;
+    }
+}
+@media screen and (max-width: 1149px) {
+    #experience{
+        margin-top: 500px;
+        height: auto;
     }
 }
 
-@media screen and (min-width:800) and (max-height: 400){
-    #experience{
-        margin-top: 100vh;
-    }
-}
- @media screen and (min-height:500px) and (max-width: 960px) {
-    #experience{
-        margin-top: 100vh;
-    }
-
-}
 @media screen and (max-width: 450px) {
     #experience{
-        margin-top: 120vmax;
+        margin-top: 290px;
     }
 
 }
-@media screen and (max-width: 330px) {
+/* @media screen and (max-width: 330px) {
     #experience{
         margin-top:  140vh;
     }
 
-}
+} */

@@ -1,6 +1,6 @@
 .portfolio__section {
-    height: 90vh !important;
-    margin-top:100vh;
+    height: auto !important;
+    /* margin-top:100vh; */
 }
 .portfolio-item {
     display: block;
@@ -39,6 +39,6 @@
 
 @media screen and (max-width: 768px) {
     .portfolio__section{
-        margin-top:0vh;
+        margin-top:4vh;
     }
 }
