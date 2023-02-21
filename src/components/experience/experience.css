@@ -3,7 +3,7 @@
     height: 100vh; 
 
     background: var(--color-bg);
-    margin-top: 65vh; 
+    margin-top: 220vh; 
 
 }
 .experience{
@@ -85,7 +85,13 @@
         margin-top: 60vh;
     }
 }
- @media screen and (max-width: 960px) {
+
+@media screen and (min-width:800) and (max-height: 400){
+    #experience{
+        margin-top: 100vh;
+    }
+}
+ @media screen and (min-height:500px) and (max-width: 960px) {
     #experience{
         margin-top: 100vh;
     }

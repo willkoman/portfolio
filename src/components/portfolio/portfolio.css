@@ -1,6 +1,6 @@
 .portfolio__section {
     height: 90vh !important;
-    margin-top:8rem
+    margin-top:100vh;
 }
 .portfolio-item {
     display: block;

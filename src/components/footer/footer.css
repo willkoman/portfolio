@@ -10,6 +10,6 @@
 }
 @media screen and (max-width: 980px) {
     .footer__text {
-        margin-top: -10vh;
+        margin-top: 20vh;
     }
 }
