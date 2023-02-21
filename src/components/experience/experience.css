@@ -86,7 +86,7 @@ background: var(--color-bg);
     }
     
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 400px) {
     #experience{
         margin-top:  95vh;
     }
