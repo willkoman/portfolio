@@ -137,7 +137,7 @@ img {
 
 @media screen and (max-width: 992px) {
     .container {
-        width: var(--container-width-lg);
+        width: var(--container-width-md);
     }
 
     section {
@@ -172,7 +172,7 @@ img {
     }
     section {
         margin-top: 8rem;
-        height: 120vh;
+        height: 120vmax;
     }
 
 }

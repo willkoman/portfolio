@@ -84,17 +84,17 @@
     #experience{
         margin-top: 80vh;
     }
-    
+
 }
 @media screen and (max-width: 450px) {
     #experience{
         margin-top: 100vh;
     }
-    
+
 }
 @media screen and (max-width: 330px) {
     #experience{
         margin-top:  140vh;
     }
-    
+
 }

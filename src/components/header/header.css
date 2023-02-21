@@ -1,5 +1,5 @@
 header {
-    height: 100vh;
+    height: 100vmax;
     padding-top: 7rem;
     margin-top: -14rem;
     margin-bottom: 10rem;
@@ -85,7 +85,7 @@ header {
 
 @media screen and (max-width: 768px) {
     header {
-        height: 100vh;
+        height: 80vmax;
     }
     .scroll__down
     {
