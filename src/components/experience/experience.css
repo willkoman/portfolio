@@ -82,26 +82,14 @@
 
 @media screen and (min-width: 1150px) {
     #experience{
-        margin-top: 60vh;
+        padding-top: 200px;
         height: auto;
     }
 }
 @media screen and (max-width: 1149px) {
     #experience{
-        margin-top: 500px;
+        padding-top: 600px;
         height: auto;
     }
 }
 
-@media screen and (max-width: 450px) {
-    #experience{
-        margin-top: 290px;
-    }
-
-}
-/* @media screen and (max-width: 330px) {
-    #experience{
-        margin-top:  140vh;
-    }
-
-} */
