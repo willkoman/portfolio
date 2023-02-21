@@ -33,7 +33,7 @@ header {
     transform: translateX(-25%);
     bottom: 350px;
     top: 35rem;
-    padding: 0rem 0rem 0rem 0rem;
+    padding: 2rem 0rem 0rem 0rem;
     z-index: 2;
     scale: 2.0;
     -webkit-transform: translateX(-25%);

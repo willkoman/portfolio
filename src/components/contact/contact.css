@@ -1,9 +1,11 @@
 .row {
     margin-right: 2rem;
     margin-left: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     background-color: var(--color-bg-variant);
     border: 1px solid #ccc;
-    height: 20vh;
+    height: 25vh;
     border-radius: 40px;
     background: transparent;
     -webkit-border-radius: 40px;
@@ -13,6 +15,7 @@
     display: grid;
     grid-auto-columns: 1fr 1fr;
     grid-template: 1fr 1fr / 1fr 1fr;
+    row-gap: 1rem;
     text-align: center;
 }
 .btn{

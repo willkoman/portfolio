@@ -25,7 +25,7 @@ const Contact = () => {
                         <button className="btn discord" onClick={() => window.open("https://discord.gg/jjSJZJmKaB")}><SiDiscord/></button>
                     </div>
                     <div className="contact-item">
-                        <h3>HMU on WhatsApp</h3>
+                        <h3>Text me on WhatsApp</h3>
                         <button className="btn" onClick={() => window.open("https://wa.me/2672278466")}><SiWhatsapp/></button>
                     </div>
                 </div>

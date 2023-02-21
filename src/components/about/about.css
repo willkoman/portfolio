@@ -1,15 +1,19 @@
 #about{
-    padding-top: 100px;
+    padding-top: 300px;
+    
 }
 .about__container{
     display:grid;
     grid-template-columns: 35% 50%;
     gap: 15%;
-    /* height: 25vh; */
-
+    height: 25vh;
+    
 }
 
 .about__me{
+
+    max-width: 30vmin;
+    max-height: 30vmin;
     width: 100%;
     aspect-ratio: 1/1;
     border-radius: 2rem;
@@ -29,6 +33,8 @@
 }
 
 .about__me-image{
+    max-width: 30vmin;
+    max-height: 30vmin;
     border-radius: 2rem;
     -webkit-border-radius: 2rem;
     -moz-border-radius: 2rem;
