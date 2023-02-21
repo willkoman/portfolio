@@ -82,13 +82,13 @@
 
 @media screen and (min-width: 1150px) {
     #experience{
-        padding-top: 200px;
+        margin-top: 200px;
         height: auto;
     }
 }
 @media screen and (max-width: 1149px) {
     #experience{
-        padding-top: 400px;
+        margin-top: 400px;
         height: auto;
     }
 }
