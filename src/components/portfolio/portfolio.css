@@ -11,8 +11,9 @@
     margin: 0 auto;
     margin-top: 1rem;
     overflow: hidden;
-    object-fit: contain;
+
     border-radius: 20px;
+    display: block;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
@@ -22,8 +23,10 @@
 
 .portfolio-item img {
     flex-shrink: 0;
-    min-width: 20vmin;
-    min-height: 20vmin;
+    min-width: 75%;
+    min-height: 75%;
+
+    display: block;
 }
 
 .portfolio__container {
