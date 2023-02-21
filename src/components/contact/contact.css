@@ -27,7 +27,7 @@
 @media screen and (max-width: 768px) {
     .row {
         grid-template: 1fr 1fr / 1fr;
-        height: 040px;
+        height: 400px;
     }
 }
     
