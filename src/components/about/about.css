@@ -1,8 +1,11 @@
+#about{
+    padding-top: 100px;
+}
 .about__container{
     display:grid;
     grid-template-columns: 35% 50%;
     gap: 15%;
-    height: 25vh;
+    /* height: 25vh; */
 
 }
 
@@ -137,4 +140,23 @@
     .about__content p {
         margin: 1.5rem 0;
     }
+}
+
+@media screen and (max-width: 400px) {
+    .about__container{
+        margin-bottom: -40vh;
+    }
+    /* reduce the section size by 20vh */
+    .about__me{
+        width: 80%;
+        margin: 0 auto 3rem;
+    }
+    .about__cards{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .about__content {
+        text-align: center;
+    }
+
 }

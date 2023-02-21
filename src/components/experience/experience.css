@@ -2,12 +2,12 @@
     margin-top: 150px; 
     height: 100vh; 
 
-background: var(--color-bg);
-/* margin-top: 15vh; */
+    background: var(--color-bg);
+    margin-top: 45vh; 
 
 }
 .experience{
-    height: -20vh;
+    /* height: 20vh; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0rem; 
@@ -82,13 +82,19 @@ background: var(--color-bg);
 
  @media screen and (max-width: 690px) {
     #experience{
-        margin-top:  50px;
+        margin-top: 80vh;
     }
     
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     #experience{
-        margin-top:  95vh;
+        margin-top: 100vh;
+    }
+    
+}
+@media screen and (max-width: 330px) {
+    #experience{
+        margin-top:  140vh;
     }
     
 }

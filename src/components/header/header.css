@@ -1,6 +1,7 @@
 header {
     height: 100vh;
     padding-top: 7rem;
+    margin-top: -14rem;
     margin-bottom: 10rem;
     overflow: visible !important;;
 }
