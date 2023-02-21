@@ -30,8 +30,8 @@ header {
     gap: 1.2rem;
     left:50%;
     transform: translateX(-25%);
-    bottom: 50vh;
-    top: 25vh;
+    bottom: 350px;
+    top: 35rem;
     padding: 0rem 0rem 0rem 0rem;
     z-index: 2;
     scale: 2.0;
