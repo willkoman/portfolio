@@ -10,7 +10,7 @@
     /* height: 20vh; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0rem; 
+    gap: 0rem;
     text-align: center;
 
 }
@@ -84,7 +84,6 @@
     #experience{
         margin-top: 60vh;
     }
-    
 }
  @media screen and (max-width: 960px) {
     #experience{
@@ -94,7 +93,7 @@
 }
 @media screen and (max-width: 450px) {
     #experience{
-        margin-top: 100vh;
+        margin-top: 120vh;
     }
 
 }
