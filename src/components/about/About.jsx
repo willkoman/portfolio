@@ -5,11 +5,9 @@ import { RiAwardLine } from "react-icons/ri";
 import { GiJesterHat } from "react-icons/gi";
 import { RiGameLine } from "react-icons/ri";
 
-import { Element } from "react-scroll";
 
 const About = () => {
   return (
-    <Element name="about" className="element">
       <section id="about">
         <h5>Get to know me</h5>
         <h2>About Me</h2>
@@ -53,7 +51,6 @@ const About = () => {
           </div>
         </div>
       </section>
-    </Element>
   );
 };
 
