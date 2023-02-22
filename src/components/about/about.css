@@ -1,162 +1,156 @@
-#about{
-    /* padding-top: 400px; */
-    
+#about {
+  /* padding-top: 400px; */
 }
-.about__container{
-    display:grid;
-    grid-template-columns: 35% 50%;
-    gap: 15%;
-    height: auto;
-    
+.about__container {
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15%;
+  height: auto;
 }
 
-.about__me{
-
-    max-width: 30vmin;
-    max-height: 30vmin;
-    width: 100%;
-    aspect-ratio: 1/1;
-    border-radius: 2rem;
-    -webkit-border-radius: 2rem;
-    -moz-border-radius: 2rem;
-    -ms-border-radius: 2rem;
-    -o-border-radius: 2rem;
-    background: linear-gradient(
-        45deg,
-        transparent,
-        var(--color-primary),
-        transparent
-    );
-    display:grid;
-    place-items: center;
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(40, 49, 57, 0.75);
+.about__me {
+  max-width: 30vmin;
+  max-height: 30vmin;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary),
+    transparent
+  );
+  display: grid;
+  place-items: center;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(40, 49, 57, 0.75);
 }
 
-.about__me-image{
-    max-width: 30vmin;
-    max-height: 30vmin;
-    border-radius: 2rem;
-    -webkit-border-radius: 2rem;
-    -moz-border-radius: 2rem;
-    -ms-border-radius: 2rem;
-    -o-border-radius: 2rem;
-    overflow: hidden;
-    transform: rotate(-15deg);
-    -webkit-transform: rotate(-15deg);
-    -moz-transform: rotate(-15deg);
-    -ms-transform: rotate(-15deg);
-    -o-transform: rotate(-15deg);
-    transition: var(--transition);
-    -webkit-transition: var(--transition);
-    -moz-transition: var(--transition);
-    -ms-transition: var(--transition);
-    -o-transition: var(--transition);
-    -webkit-box-shadow: -5px 3px 5px 0px rgba(39, 48, 56, 0.75);
+.about__me-image {
+  max-width: 30vmin;
+  max-height: 30vmin;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  overflow: hidden;
+  transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  -webkit-box-shadow: -5px 3px 5px 0px rgba(39, 48, 56, 0.75);
 }
 
-.about__me-image:hover{
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
+.about__me-image:hover {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
 }
 
-.about__cards{
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap: 1.5rem;
+.about__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }
 
-.about__card{
-    background: var(--color-bg-variant);
-    border: 1px solid transparent;
-    border-radius: 1rem;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    transition: var(--transition);
-    -webkit-transition: var(--transition);
-    -moz-transition: var(--transition);
-    -ms-transition: var(--transition);
-    -o-transition: var(--transition);
+.about__card {
+  background: var(--color-bg-variant);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
 }
 
-.about__card:hover{
-    background:transparent;
-    border-color: var(--color-primary-variant);
-    cursor: default;
+.about__card:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
 }
 
-.about_icon{
-    color:var(--color-primary);
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
+.about_icon {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
 }
 
 .about__card h5 {
-    font-size: 0.95rem;
-    color: var(--color-primary-variant);
+  font-size: 0.95rem;
+  color: var(--color-primary-variant);
 }
 
 .about_card small {
-    font-size: 0.7rem;
-    color:var(--color-light);
+  font-size: 0.7rem;
+  color: var(--color-light);
 }
 
 .about_content p {
-    margin: 2rem 2rem 2rem;
-    color: var(--color-light);
+  margin: 2rem 2rem 2rem;
+  color: var(--color-light);
 }
 
 /* ========= Media Queries (Medium Devices) ========= */
 
-
 @media screen and (min-width: 601px) {
-    #about{
-        margin-top: 600px;
-        height: auto;
-    }
-    .about__container{
-        grid-template-columns: 1fr;
-        gap:0px;
-    }
-    .about__me{
-        width: 50%;
-        margin: 2rem auto 4rem;
-    }
-    .about__content p{
-        margin: 1rem 0 1.4rem;
-    }
+  #about {
+    margin-top: 600px;
+    height: auto;
+  }
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+  .about__me {
+    width: 50%;
+    margin: 2rem auto 4rem;
+  }
+  .about__content p {
+    margin: 1rem 0 1.4rem;
+  }
 }
 
 /* ========= Media Queries (Small Devices) ========= */
 
 @media screen and (max-width: 600px) {
-
-    #about{
-        height: auto;
-        margin-top: 600px;
-    }
-    .about__container{
-        grid-template-columns: 1fr;
-        gap:0px;
-        
-    }
-    .about__cards{
-        grid-template-columns: 1fr;
-        margin-bottom: 40px;
-    }
-    .about__me{
-        width: 100%;
-        margin: 1rem auto 4rem;
-    }
-    .about__content p{
-        margin: 1rem 0 1.4rem;
-        text-align: center;
-    }
+  #about {
+    height: auto;
+    margin-top: 600px;
+  }
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+  .about__cards {
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+  }
+  .about__me {
+    width: 100%;
+    margin: 1rem auto 4rem;
+  }
+  .about__content p {
+    margin: 1rem 0 1.4rem;
+    text-align: center;
+  }
 }

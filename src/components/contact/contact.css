@@ -1,57 +1,55 @@
 .row {
-    margin-right: 2rem;
-    margin-left: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    background-color: var(--color-bg-variant);
-    border: 1px solid #ccc;
-    height: 220px;
-    border-radius: 40px;
-    background: transparent;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    -ms-border-radius: 40px;
-    -o-border-radius: 40px;
-    display: grid;
-    grid-auto-columns: 1fr 1fr;
-    grid-template: 1fr 1fr / 1fr 1fr;
-    row-gap: 1rem;
-    text-align: center;
-    box-sizing:content-box;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: var(--color-bg-variant);
+  border: 1px solid #ccc;
+  height: 220px;
+  border-radius: 40px;
+  background: transparent;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  display: grid;
+  grid-auto-columns: 1fr 1fr;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  row-gap: 1rem;
+  text-align: center;
+  box-sizing: content-box;
 }
-.btn{
-    background: var(--color-bg);
+.btn {
+  background: var(--color-bg);
 }
-.btn:hover{
-    background: var(--color-primary);
-    color: var(--color-bg-variant);
-    border-color: transparent;
+.btn:hover {
+  background: var(--color-primary);
+  color: var(--color-bg-variant);
+  border-color: transparent;
 }
-.btn > p{
-    font-size: 0;
+.btn > p {
+  font-size: 0;
 }
 
 @media screen and (min-width: 1150px) {
-    #contact{
-        margin-top: 200px;
-        padding-bottom: 3rem;
-        height: auto;
-    }
-    .row{
-        height: 300px;
-        
-    }
+  #contact {
+    margin-top: 200px;
+    padding-bottom: 3rem;
+    height: auto;
+  }
+  .row {
+    height: 300px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .row {
-        grid-template: 0.5fr 0.5fr 0.5fr 0.5fr / 1fr;
-        height: 400px;
-        
-    }
-    #contact{
-        margin-top:100px;
-        height: auto;
-        margin-bottom: 7rem; 
-    }
+  .row {
+    grid-template: 0.5fr 0.5fr 0.5fr 0.5fr / 1fr;
+    height: 400px;
+  }
+  #contact {
+    margin-top: 100px;
+    height: auto;
+    margin-bottom: 7rem;
+  }
 }

@@ -1,15 +1,14 @@
 .footer__text {
-    color: var(--color-text);
-    font-size: 1.1rem;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    padding-bottom: 10rem;
-
+  color: var(--color-text);
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-bottom: 10rem;
 }
 @media screen and (max-width: 980px) {
-    .footer__text {
-        margin-top: 20vh;
-    }
+  .footer__text {
+    margin-top: 20vh;
+  }
 }
