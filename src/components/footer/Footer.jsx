@@ -7,6 +7,7 @@ const Footer = () => {
       <div className="footer__text">
         <p>Designed and built by William Krasnov</p>
       </div>
+      <div className="waves wavespan"> </div>
     </div>
   );
 };

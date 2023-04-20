@@ -5,8 +5,30 @@
   margin: 0;
   padding: 0;
   text-align: center;
-  padding-bottom: 10rem;
+  margin-top: 20vh;
+  /* padding-bottom: 10rem; */
 }
+
+.wavespan{
+  /*make this at the very bottom of the page*/
+  position:sticky;
+  bottom: 0;
+
+  aspect-ratio: 540 /327 ;
+  /*reduce top margin to make svg span the whole width of the footer*/
+
+  /*make svg span the whole width of the footer but align to the top*/
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: auto;
+
+  
+}
+.waves{
+  background-image: url('../../assets/layered-waves-haikei.svg');
+}
+
 @media screen and (max-width: 980px) {
   .footer__text {
     margin-top: 20vh;

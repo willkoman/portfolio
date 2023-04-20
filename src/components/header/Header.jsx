@@ -6,8 +6,11 @@ import HeaderSocials from "./HeaderSocials";
 
 const Header = () => {
   return (
+    
     <header>
+      
       <section id="header">
+        <div className="wavestop wavespantop"> </div>
         <div className="container header__container">
           <h3>Heyo, I'm</h3>
           <h1>Will Krasnov</h1>
@@ -17,9 +20,11 @@ const Header = () => {
             <img src={Me} alt="Will Krasnov" />
           </div>
           <HeaderSocials />
+          
           <a href="#contact" className="scroll__down">
             Scroll Down
           </a>
+          
         </div>
       </section>
     </header>

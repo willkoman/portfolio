@@ -10,7 +10,7 @@ const Contact = () => {
         <section id="contact">
             <h5>Want to get in touch?</h5>
             <h2>Contact</h2>
-            <div className="contact__container">
+            <div className="contact__container" >
                 <div className="row">
                     <div className="contact-item">
                         <h3>Send me an email</h3>

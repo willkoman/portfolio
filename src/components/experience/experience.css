@@ -1,7 +1,5 @@
 #experience {
   height: 100vh;
-
-  background: var(--color-bg);
   margin-top: 200px;
 }
 .experience {
@@ -29,7 +27,7 @@
 }
 
 .experience__container > div:hover {
-  background: transparent;
+  background: var(--color-bg);
   border-color: var(--color-primary-variant);
   cursor: default;
 }

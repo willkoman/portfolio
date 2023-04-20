@@ -19,9 +19,9 @@
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
   background: linear-gradient(
-    45deg,
+    -45deg,
     transparent,
-    var(--color-primary),
+    var(--color-bg-variant),
     transparent
   );
   display: grid;
@@ -84,7 +84,7 @@
 }
 
 .about__card:hover {
-  background: transparent;
+  background: var(--color-bg);
   border-color: var(--color-primary-variant);
   cursor: default;
 }

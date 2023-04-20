@@ -1,8 +1,9 @@
 .row {
-  margin-right: 2rem;
-  margin-left: 2rem;
+
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  /* padding-bottom: 2rem; */
   background-color: var(--color-bg-variant);
   border: 1px solid #ccc;
   height: 220px;
@@ -19,6 +20,15 @@
   text-align: center;
   box-sizing: content-box;
 }
+
+.contact__container {
+/* background-image: url(../../assets/blob-scene-haikei.svg); */
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+border-radius: 40px;
+
+}
 .btn {
   background: var(--color-bg);
 }
@@ -34,7 +44,7 @@
 @media screen and (min-width: 1150px) {
   #contact {
     margin-top: 200px;
-    padding-bottom: 3rem;
+    /* padding-bottom: 3rem; */
     height: auto;
   }
   .row {
@@ -50,6 +60,6 @@
   #contact {
     margin-top: 100px;
     height: auto;
-    margin-bottom: 7rem;
+    /* margin-bottom: 7rem; */
   }
 }

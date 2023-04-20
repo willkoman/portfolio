@@ -9,7 +9,7 @@
   height: 40vmin;
   text-align: center;
   margin: 0 auto;
-  margin-top: 1rem;
+  margin-top: 2rem;
   overflow: hidden;
 
   border-radius: 20px;
@@ -19,12 +19,23 @@
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   box-shadow: 0rem 0rem 1rem rgba(29, 84, 121, 0.792);
+  transition: var(--transition);
 }
+/*make portfolio item increase in size when hovered and decrease when not hovered*/
+.portfolio-item:hover {
+  transform: scale(1.1);
+  transition: var(--transition);
+} 
 
-.portfolio-item img {
+.portfolio-item a > img {
   flex-shrink: 0;
   min-width: 75%;
   min-height: 75%;
+/* make sure the image is not smaller than the container */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 
   display: block;
 }

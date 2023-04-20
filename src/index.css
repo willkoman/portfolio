@@ -40,11 +40,12 @@ body {
     background: var(--color-bg);
     color: var(--color-primary);
     line-height: 1.7;
-    background-color: var(--color-bg);
-    /* background-image: url(../src/assets/triangles.svg); */
-    /*Make background fit horizontally but scroll vertically*/
-    background-size: 100% auto;
+    background-image: url(../src/assets/polygon-scatter-haikei.svg);
     
+    /*Make background fit horizontally but scroll vertically*/
+    aspect-ratio: 540/960;
+    background-size: cover;
+    /* background-position: center; */
 }
 
 /* ========= General Styles ========= */
