@@ -2,18 +2,15 @@ header {
   padding-top: 0rem;
   margin-top: 0rem;
   margin-bottom: 200px;
+  
   height: auto;
   overflow: visible !important;
 }
 
 .wavespantop{
-  /*make this at the very top of the page*/
 
-
-  
   aspect-ratio: 540 /304 ;
 
-  /*make svg span the whole width of the footer but align to the top*/
   width: 100% !important;
   background-position: top;
   background-repeat: no-repeat;
@@ -22,11 +19,6 @@ header {
   top: 0;
   z-index: -1;
 
-
-
-
-
-  
 }
 .wavestop{
   background-image: url('../../assets/layered-waves-haikei-top.svg');
