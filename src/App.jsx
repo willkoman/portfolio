@@ -12,7 +12,7 @@ const App = () => {
     return (
       <>
         <Header/>
-        <Nav/>
+        {/* <Nav/> Temporarily disabled*/}
         <About/>
         <Experience/>
         <Portfolio/>
