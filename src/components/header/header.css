@@ -2,30 +2,28 @@ header {
   padding-top: 0rem;
   margin-top: 0rem;
   margin-bottom: 200px;
-  
-  height: auto;
+
+  height: auto; /* Allow height to adjust based on content */
   overflow: visible !important;
-  
-  /* Ensure the header is the containing block for absolutely positioned children */
-  position: relative;
+
+  position: relative; /* Contain absolutely positioned children */
 }
 
 .wavespantop {
-  aspect-ratio: 540 / 304; /* Maintain original aspect ratio */
-  
-  width: 100% !important; /* Stretch fully horizontally */
-  
+  width: 100% !important;
+  max-height: 20vh; /* Limit height to 20% of viewport height */
+  height: auto; /* Allow height to adjust based on content */
+
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100% auto; /* Stretch horizontally, maintain aspect ratio vertically */
-  
+
   position: absolute;
   top: 0;
-  left: 0; /* Ensure it starts from the left */
+  left: 0; /* Align to the left */
   z-index: -1; /* Keep it behind other header content */
-  
-  /* Optional: Ensure no overflow issues */
-  overflow: hidden;
+
+  overflow: hidden; /* Prevent overflow issues */
 }
 
 .wavestop {
@@ -56,12 +54,11 @@ header {
   gap: 1.2rem;
   left: 50%;
   transform: translateX(-50%); /* Center horizontally */
-  /* Removed conflicting 'bottom' and 'top' */
   top: 35rem; /* Adjust as needed based on your design */
 
   z-index: 2;
   scale: 2;
-  
+
   /* Removed redundant vendor prefixes */
 }
 
@@ -89,6 +86,11 @@ header {
   border-radius: 12rem 12rem 0 0;
   padding: 0rem;
   box-shadow: 0px 0px 20px 0px var(--color-primary-variant);
+  -webkit-border-radius: 12rem 12rem 0 0;
+  -moz-border-radius: 12rem 12rem 0 0;
+  -ms-border-radius: 12rem 12rem 0 0;
+  -o-border-radius: 12rem 12rem 0 0;
+  -webkit-box-shadow: 0px 0px 20px 0px var(--color-primary-variant);
 }
 
 /* ========= Scroll Down ========= */
@@ -100,12 +102,12 @@ header {
   transform: rotate(90deg);
   font-weight: 300;
   font-size: 0.9rem;
+  /* Vendor prefixes removed */
 }
 
-/* Media Queries */
 @media screen and (min-width: 1150px) {
   header {
-    height: auto; /* Removed fixed height to allow content to define height */
+    height: auto; /* Remove fixed height */
   }
 
   .header__socials {
@@ -115,7 +117,7 @@ header {
 
 @media screen and (max-width: 1149px) {
   header {
-    height: auto; /* Removed fixed height to allow content to define height */
+    height: auto; /* Remove fixed height */
   }
 
   .header__socials {
