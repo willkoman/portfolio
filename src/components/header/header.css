@@ -22,7 +22,7 @@ header {
   position: absolute;
   top: 0;
   left: 0; /* Ensure it starts from the left edge */
-  z-index: -1; /* Keep it behind other header content */
+  z-index: 1; /* Keep it behind other header content */
 
   overflow: hidden; /* Prevent overflow issues */
 }
