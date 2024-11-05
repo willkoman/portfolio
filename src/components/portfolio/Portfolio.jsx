@@ -25,9 +25,13 @@ const Portfolio = () => {
             </a>
           </div>
           <div className="col-lg-12 portfolio-item">
-            <h3>Idle Loops</h3>
-            <small> COMING SOON! </small>
-            <img src={Loops} alt="placeholder" />
+            <h3>Paws & Heroes Legacy Foundation</h3>
+            <a
+              href="https://pawsandheroes.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+            <img src="https://images.unsplash.com/photo-1522276498395-f4f68f7f8454?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="placeholder" />
           </div>
         </div>
         <div className="port_row">
