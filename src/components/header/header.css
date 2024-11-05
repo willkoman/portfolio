@@ -1,35 +1,58 @@
+/* ======= Header Styling ======= */
 header {
-  padding-top: 0rem;
-  margin-top: 0rem;
+  padding-top: 0;
+  margin-top: 0;
   margin-bottom: 200px;
   
+  /* Remove fixed height to allow content to define height */
   height: auto;
   overflow: visible !important;
-}
-
-.wavespantop{
-
-  aspect-ratio: 540 /304 ;
-
-  width: 100% !important;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  z-index: -1;
-
-}
-.wavestop{
-  background-image: url('../../assets/layered-waves-haikei-top.svg');
-}
-
-.header__container {
-  text-align: center;
+  
+  /* Ensure the header is positioned relative to contain absolutely positioned children */
   position: relative;
 }
 
-/*  ========== CTA ========== */
+/* ======= Waves Span Top ======= */
+.wavespantop {
+  /* Maintain aspect ratio */
+  aspect-ratio: 540 / 304;
+  
+  /* Ensure full width for responsiveness */
+  width: 100%;
+  
+  /* Background Image Settings */
+  background-image: url('../../assets/layered-waves-haikei-top.svg');
+  background-position: top;
+  background-repeat: no-repeat;
+  
+  /* Change from cover to contain or 100% auto to maintain aspect ratio */
+  background-size: contain; /* or use '100% auto' */
+  
+  /* Positioning */
+  position: absolute;
+  top: 0;
+  left: 0; /* Ensure it spans from the left */
+  z-index: -1;
+  
+  /* Prevent overflow */
+  overflow: hidden;
+}
+
+/* ======= Waves Top Class ======= */
+.wavestop {
+  /* Since background-image is already set in .wavespantop, this might be redundant */
+  /* If .wavestop is a separate class, ensure it's used appropriately */
+  background-image: url('../../assets/layered-waves-haikei-top.svg');
+}
+
+/* ======= Header Container ======= */
+.header__container {
+  text-align: center;
+  position: relative;
+  z-index: 1; /* Ensure it sits above the waves */
+}
+
+/* ======= Call To Action (CTA) ======= */
 .cta {
   margin-top: 2.5rem;
   display: flex;
@@ -37,59 +60,45 @@ header {
   justify-content: center;
 }
 
-/*  ========== SOCIALS ========== */
-
+/* ======= Socials ======= */
 .header__socials {
   position: absolute;
   align-items: center;
   display: flex;
-  justify-items: center;
+  justify-content: center; /* Changed from justify-items to justify-content */
   flex-direction: row;
   gap: 1.2rem;
   left: 50%;
-  transform: translateX(-25%);
+  transform: translateX(-50%); /* Center horizontally */
   bottom: 350px;
-  top: 35rem;
-
+  top: 35rem; /* This might conflict with bottom; consider using one */
+  
   z-index: 2;
   scale: 2;
-  -webkit-transform: translateX(-25%);
-  -moz-transform: translateX(-25%);
-  -ms-transform: translateX(-25%);
-  -o-transform: translateX(-25%);
+  
+  /* Remove redundant vendor prefixes if not needed */
 }
 
+/* Hide paragraph text inside social links */
 .header__socials > a > p {
   font-size: 0;
 }
 
-/* .header__socials::after {
-    content: '';
-    width: 1px;
-    height: 2rem;
-    background: var(--color-primary);
-} */
-
-/*  ========== PHOTO ========== */
-
+/* ======= Photo Section ======= */
 .me {
   background: linear-gradient(var(--color-primary-variant), transparent);
   width: 20rem;
   height: 20rem;
   position: absolute;
-  left: calc(50% - 10rem);
-  margin-top: 2rem;
+  left: 50%;
+  top: 2rem; /* Changed from margin-top for better positioning */
+  transform: translateX(-50%); /* Center horizontally */
   border-radius: 12rem 12rem 0 0;
-  -webkit-border-radius: 12rem 12rem 0 0;
-  -moz-border-radius: 12rem 12rem 0 0;
-  -ms-border-radius: 12rem 12rem 0 0;
-  -o-border-radius: 12rem 12rem 0 0;
-  padding: 0rem 0rem 0rem 0rem;
-  -webkit-box-shadow: 0px 0px 20px 0px var(--color-primary-variant);
+  padding: 0;
+  box-shadow: 0px 0px 20px 0px var(--color-primary-variant);
 }
 
-/* ========= Scroll Down ========= */
-
+/* ======= Scroll Down Indicator ======= */
 .scroll__down {
   position: absolute;
   right: -2.3rem;
@@ -97,29 +106,32 @@ header {
   transform: rotate(90deg);
   font-weight: 300;
   font-size: 0.9rem;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
 }
 
+/* ======= Media Queries ======= */
 @media screen and (min-width: 1150px) {
   header {
-    height: 400px;
+    /* Removed fixed height to allow auto */
+    /* height: 400px; */
+    margin-bottom: 200px; /* Ensure margin is consistent */
   }
 
   .header__socials {
     top: 600px;
+    /* Consider removing 'bottom' if using 'top' */
   }
 }
 
 @media screen and (max-width: 1149px) {
   header {
-    height: 350px;
+    /* Removed fixed height to allow auto */
+    /* height: 350px; */
+    margin-bottom: 200px;
   }
 
   .header__socials {
     top: 650px;
+    /* Consider removing 'bottom' if using 'top' */
   }
 }
 
