@@ -2,7 +2,6 @@ import React from "react";
 import "./portfolio.css";
 import LivingRoom from "../../assets/livingroom.jpg";
 import RubiksCube from "../../assets/rubiks.jpg";
-import Loops from "../../assets/loops.png";
 
 const Portfolio = () => {
   return (
