@@ -10,17 +10,17 @@ const Experience = () => {
       <div className="experience">
         <div className="container experience__container">
           <div className="experience__coding">
-            <h3>Coding</h3>
+            <h3>Programming</h3>
             <div className="experience__content">
               <article className="experience__details">
                 <BsFillPatchCheckFill className="experience__details-icon" />
-                <h4>C#</h4>
+                <h4>Python</h4>
                 <small className="text-light">Skilled</small>
               </article>
               <article className="experience__details">
                 <BsFillPatchCheckFill className="experience__details-icon" />
-                <h4>Java</h4>
-                <small className="text-light">Experienced</small>
+                <h4>C#</h4>
+                <small className="text-light">Skilled</small>
               </article>
               <article className="experience__details">
                 <BsFillPatchCheckFill className="experience__details-icon" />
@@ -56,7 +56,7 @@ const Experience = () => {
               </article>
               <article className="experience__details">
                 <BsFillPatchCheckFill className="experience__details-icon" />
-                <h4>Fruity Loops</h4>
+                <h4>Illustrator</h4>
                 <small className="text-light">Intermediate</small>
               </article>
             </div>
