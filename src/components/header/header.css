@@ -1,58 +1,43 @@
-/* ======= Header Styling ======= */
 header {
-  padding-top: 0;
-  margin-top: 0;
+  padding-top: 0rem;
+  margin-top: 0rem;
   margin-bottom: 200px;
   
-  /* Remove fixed height to allow content to define height */
   height: auto;
   overflow: visible !important;
   
-  /* Ensure the header is positioned relative to contain absolutely positioned children */
+  /* Ensure the header is the containing block for absolutely positioned children */
   position: relative;
 }
 
-/* ======= Waves Span Top ======= */
 .wavespantop {
-  /* Maintain aspect ratio */
-  aspect-ratio: 540 / 304;
+  aspect-ratio: 540 / 304; /* Maintain original aspect ratio */
   
-  /* Ensure full width for responsiveness */
-  width: 100%;
+  width: 100% !important; /* Stretch fully horizontally */
   
-  /* Background Image Settings */
-  background-image: url('../../assets/layered-waves-haikei-top.svg');
   background-position: top;
   background-repeat: no-repeat;
+  background-size: 100% auto; /* Stretch horizontally, maintain aspect ratio vertically */
   
-  /* Change from cover to contain or 100% auto to maintain aspect ratio */
-  background-size: contain; /* or use '100% auto' */
-  
-  /* Positioning */
   position: absolute;
   top: 0;
-  left: 0; /* Ensure it spans from the left */
-  z-index: -1;
+  left: 0; /* Ensure it starts from the left */
+  z-index: -1; /* Keep it behind other header content */
   
-  /* Prevent overflow */
+  /* Optional: Ensure no overflow issues */
   overflow: hidden;
 }
 
-/* ======= Waves Top Class ======= */
 .wavestop {
-  /* Since background-image is already set in .wavespantop, this might be redundant */
-  /* If .wavestop is a separate class, ensure it's used appropriately */
   background-image: url('../../assets/layered-waves-haikei-top.svg');
 }
 
-/* ======= Header Container ======= */
 .header__container {
   text-align: center;
   position: relative;
-  z-index: 1; /* Ensure it sits above the waves */
 }
 
-/* ======= Call To Action (CTA) ======= */
+/*  ========== CTA ========== */
 .cta {
   margin-top: 2.5rem;
   display: flex;
@@ -60,7 +45,8 @@ header {
   justify-content: center;
 }
 
-/* ======= Socials ======= */
+/*  ========== SOCIALS ========== */
+
 .header__socials {
   position: absolute;
   align-items: center;
@@ -70,21 +56,28 @@ header {
   gap: 1.2rem;
   left: 50%;
   transform: translateX(-50%); /* Center horizontally */
-  bottom: 350px;
-  top: 35rem; /* This might conflict with bottom; consider using one */
-  
+  /* Removed conflicting 'bottom' and 'top' */
+  top: 35rem; /* Adjust as needed based on your design */
+
   z-index: 2;
   scale: 2;
   
-  /* Remove redundant vendor prefixes if not needed */
+  /* Removed redundant vendor prefixes */
 }
 
-/* Hide paragraph text inside social links */
 .header__socials > a > p {
   font-size: 0;
 }
 
-/* ======= Photo Section ======= */
+/* .header__socials::after {
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+} */
+
+/*  ========== PHOTO ========= */
+
 .me {
   background: linear-gradient(var(--color-primary-variant), transparent);
   width: 20rem;
@@ -94,11 +87,12 @@ header {
   top: 2rem; /* Changed from margin-top for better positioning */
   transform: translateX(-50%); /* Center horizontally */
   border-radius: 12rem 12rem 0 0;
-  padding: 0;
+  padding: 0rem;
   box-shadow: 0px 0px 20px 0px var(--color-primary-variant);
 }
 
-/* ======= Scroll Down Indicator ======= */
+/* ========= Scroll Down ========= */
+
 .scroll__down {
   position: absolute;
   right: -2.3rem;
@@ -108,30 +102,24 @@ header {
   font-size: 0.9rem;
 }
 
-/* ======= Media Queries ======= */
+/* Media Queries */
 @media screen and (min-width: 1150px) {
   header {
-    /* Removed fixed height to allow auto */
-    /* height: 400px; */
-    margin-bottom: 200px; /* Ensure margin is consistent */
+    height: auto; /* Removed fixed height to allow content to define height */
   }
 
   .header__socials {
-    top: 600px;
-    /* Consider removing 'bottom' if using 'top' */
+    top: 600px; /* Adjust as necessary */
   }
 }
 
 @media screen and (max-width: 1149px) {
   header {
-    /* Removed fixed height to allow auto */
-    /* height: 350px; */
-    margin-bottom: 200px;
+    height: auto; /* Removed fixed height to allow content to define height */
   }
 
   .header__socials {
-    top: 650px;
-    /* Consider removing 'bottom' if using 'top' */
+    top: 650px; /* Adjust as necessary */
   }
 }
 
