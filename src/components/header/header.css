@@ -2,15 +2,16 @@ header {
   padding-top: 0rem;
   margin-top: 0rem;
   margin-bottom: 200px;
-
-  height: auto; /* Allow height to adjust based on content */
+  
+  height: auto;
   overflow: visible !important;
-
-  position: relative; /* Contain absolutely positioned children */
 }
 
 .wavespantop {
-  width: 100% !important;
+  /* Removed aspect-ratio to allow explicit height control */
+  /* aspect-ratio: 540 /304 ; */
+
+  width: 100% !important; /* Ensure full horizontal stretch */
   max-height: 20vh; /* Limit height to 20% of viewport height */
   height: auto; /* Allow height to adjust based on content */
 
@@ -20,13 +21,12 @@ header {
 
   position: absolute;
   top: 0;
-  left: 0; /* Align to the left */
+  left: 0; /* Ensure it starts from the left edge */
   z-index: -1; /* Keep it behind other header content */
 
   overflow: hidden; /* Prevent overflow issues */
 }
-
-.wavestop {
+.wavestop{
   background-image: url('../../assets/layered-waves-haikei-top.svg');
 }
 
@@ -49,17 +49,20 @@ header {
   position: absolute;
   align-items: center;
   display: flex;
-  justify-content: center; /* Changed from justify-items to justify-content */
+  justify-items: center;
   flex-direction: row;
   gap: 1.2rem;
   left: 50%;
-  transform: translateX(-50%); /* Center horizontally */
-  top: 35rem; /* Adjust as needed based on your design */
+  transform: translateX(-25%);
+  bottom: 350px;
+  top: 35rem;
 
   z-index: 2;
   scale: 2;
-
-  /* Removed redundant vendor prefixes */
+  -webkit-transform: translateX(-25%);
+  -moz-transform: translateX(-25%);
+  -ms-transform: translateX(-25%);
+  -o-transform: translateX(-25%);
 }
 
 .header__socials > a > p {
@@ -73,23 +76,21 @@ header {
     background: var(--color-primary);
 } */
 
-/*  ========== PHOTO ========= */
+/*  ========== PHOTO ========== */
 
 .me {
   background: linear-gradient(var(--color-primary-variant), transparent);
   width: 20rem;
   height: 20rem;
   position: absolute;
-  left: 50%;
-  top: 2rem; /* Changed from margin-top for better positioning */
-  transform: translateX(-50%); /* Center horizontally */
+  left: calc(50% - 10rem);
+  margin-top: 2rem;
   border-radius: 12rem 12rem 0 0;
-  padding: 0rem;
-  box-shadow: 0px 0px 20px 0px var(--color-primary-variant);
   -webkit-border-radius: 12rem 12rem 0 0;
   -moz-border-radius: 12rem 12rem 0 0;
   -ms-border-radius: 12rem 12rem 0 0;
   -o-border-radius: 12rem 12rem 0 0;
+  padding: 0rem 0rem 0rem 0rem;
   -webkit-box-shadow: 0px 0px 20px 0px var(--color-primary-variant);
 }
 
@@ -102,26 +103,29 @@ header {
   transform: rotate(90deg);
   font-weight: 300;
   font-size: 0.9rem;
-  /* Vendor prefixes removed */
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
 }
 
 @media screen and (min-width: 1150px) {
   header {
-    height: auto; /* Remove fixed height */
+    height: 400px;
   }
 
   .header__socials {
-    top: 600px; /* Adjust as necessary */
+    top: 600px;
   }
 }
 
 @media screen and (max-width: 1149px) {
   header {
-    height: auto; /* Remove fixed height */
+    height: 350px;
   }
 
   .header__socials {
-    top: 650px; /* Adjust as necessary */
+    top: 650px;
   }
 }
 
