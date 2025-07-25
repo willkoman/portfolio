@@ -16,13 +16,14 @@
 
   /* Sizing */
   width: 100%;
-  aspect-ratio: 540 / 327;
+  max-height: 20vh; /* Limit height to 20% of viewport height */
+  height: auto; /* Allow height to adjust based on content */
 
   /* Background Image Settings */
   background-image: url('../../assets/layered-waves-haikei.svg');
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: contain; /* Changed from cover to contain */
+  background-size: 100% auto; /* Stretch horizontally, maintain aspect ratio vertically */
 
   /* Overflow Handling */
   overflow: hidden;
