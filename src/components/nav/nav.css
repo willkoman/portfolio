@@ -16,6 +16,12 @@ nav {
   -o-border-radius: 3rem;
   backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.1);
+
+  /* Mobile browser stability fixes */
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 
 nav a {
@@ -39,4 +45,27 @@ nav a:hover {
 nav a.active {
   background: var(--color-primary);
   color: var(--color-bg-variant);
+}
+
+/* Mobile optimizations */
+@media screen and (max-width: 768px) {
+  nav {
+    bottom: 1.5rem;
+    padding: 0.6rem 1.4rem;
+    /* Use 3D transforms for better mobile performance */
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+    /* Prevent mobile browsers from moving the element during scroll */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    will-change: transform;
+  }
+}
+
+/* Additional fix for iOS Safari and mobile Chrome */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  nav {
+    /* More aggressive bottom positioning for portrait mobile */
+    bottom: 1rem;
+  }
 }
