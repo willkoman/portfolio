@@ -2,7 +2,7 @@ header {
   padding-top: 0rem;
   margin-top: 0rem;
   margin-bottom: 200px;
-  
+
   height: auto;
   overflow: visible !important;
 }
@@ -12,12 +12,11 @@ header {
   /* aspect-ratio: 540 /304 ; */
 
   width: 100% !important; /* Ensure full horizontal stretch */
-  max-height: 20vh; /* Limit height to 20% of viewport height */
-  height: auto; /* Allow height to adjust based on content */
+  height: min(20vh, calc(100vw * 304 / 540)); /* Use smaller of 20vh or natural aspect ratio */
 
-  background-position: top;
+  background-position: bottom; /* Show the bottom part (wave valleys) of the SVG */
   background-repeat: no-repeat;
-  background-size: 100% auto; /* Stretch horizontally, maintain aspect ratio vertically */
+  background-size: cover; /* Cover to fill the container properly */
 
   position: absolute;
   top: 0;
@@ -92,6 +91,7 @@ header {
   -o-border-radius: 12rem 12rem 0 0;
   padding: 0rem 0rem 0rem 0rem;
   -webkit-box-shadow: 0px 0px 20px 0px var(--color-primary-variant);
+  box-shadow: 0px 0px 20px 0px var(--color-primary-variant);
 }
 
 /* ========= Scroll Down ========= */
