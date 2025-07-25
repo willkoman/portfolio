@@ -20,7 +20,7 @@
 
   /* Background Image Settings */
   background-image: url('../../assets/layered-waves-haikei.svg');
-  background-position: bottom;
+  background-position: top; /* Show the top part (wave peaks) of the SVG */
   background-repeat: no-repeat;
   background-size: cover; /* Cover to fill the container properly */
 
