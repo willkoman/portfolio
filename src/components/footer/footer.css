@@ -16,7 +16,7 @@
 
   /* Sizing */
   width: 100%;
-  height: min(20vh, calc(100vw * 327 / 540)); /* Use smaller of 20vh or natural aspect ratio */
+  height: min(35vh, calc(100vw * 327 / 540)); /* Use smaller of 35vh or natural aspect ratio */
 
   /* Background Image Settings */
   background-image: url('../../assets/layered-waves-haikei.svg');
