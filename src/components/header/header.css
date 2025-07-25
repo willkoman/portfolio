@@ -12,7 +12,7 @@ header {
   /* aspect-ratio: 540 /304 ; */
 
   width: 100% !important; /* Ensure full horizontal stretch */
-  height: min(20vh, calc(100vw * 304 / 540)); /* Use smaller of 20vh or natural aspect ratio */
+  height: min(35vh, calc(100vw * 304 / 540)); /* Use smaller of 35vh or natural aspect ratio */
 
   background-position: bottom; /* Show the bottom part (wave valleys) of the SVG */
   background-repeat: no-repeat;
