@@ -1,7 +1,7 @@
 import React from "react";
 import "./portfolio.css";
 import LivingRoom from "../../assets/livingroom.jpg";
-import RubiksCube from "../../assets/rubiks.jpg";
+import Pippity from "../../assets/pippity.jpg";
 
 const Portfolio = () => {
   return (
@@ -42,9 +42,9 @@ const Portfolio = () => {
             </a>
           </div>
           <div className="col-lg-12 portfolio-item">
-            <h3>Rubiks Cube Render</h3>
-            <a href={RubiksCube} target="_blank" rel="noopener noreferrer">
-              <img src={RubiksCube} alt="placeholder" />
+            <h3>Pippity.io</h3>
+            <a href="https://pippity.io/"} target="_blank" rel="noopener noreferrer">
+              <img src={Pippity} alt="placeholder" />
             </a>
           </div>
         </div>
