@@ -39,14 +39,12 @@ const About = () => {
               </article>
             </div>
             <p>
-              I am a full stack developer with a passion for creating digital
-              experiences. I have experience in a wide range of technologies and
-              have worked on projects ranging from small websites to large scale
-              enterprise applications. I am a jack of all trades and have
-              experience in all aspects of digital creation. I have a passion
-              for creating games and have released two games on public stores. I
-              am always looking for new opportunities to learn and grow as a
-              developer.
+            I'm a full stack developer with experience building everything from small websites
+            to large-scale enterprise applications. Over the years, I've worked with a wide
+            range of technologies and enjoy tackling all aspects of digital development.
+            I also have a passion for game creation and have released two games on public
+            stores. I'm always looking for new challenges and opportunities to learn, grow,
+            and improve as a developer.
             </p>
           </div>
         </div>
