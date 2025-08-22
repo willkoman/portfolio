@@ -36,15 +36,15 @@ const Portfolio = () => {
         </div>
         <div className="port_row">
           <div className="col-lg-12 portfolio-item">
-            <h3>Living Room Render</h3>
-            <a href={LivingRoom} target="_blank" rel="noopener noreferrer">
-              <img src={LivingRoom} alt="placeholder" />
-            </a>
-          </div>
-          <div className="col-lg-12 portfolio-item">
             <h3>Pippity.io</h3>
             <a href="https://pippity.io/" target="_blank" rel="noopener noreferrer">
               <img src={Pippity} alt="placeholder" />
+            </a>
+          </div>
+          <div className="col-lg-12 portfolio-item">
+            <h3>Living Room Render</h3>
+            <a href={LivingRoom} target="_blank" rel="noopener noreferrer">
+              <img src={LivingRoom} alt="placeholder" />
             </a>
           </div>
         </div>
