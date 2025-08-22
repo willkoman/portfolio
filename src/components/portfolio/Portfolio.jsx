@@ -43,7 +43,7 @@ const Portfolio = () => {
           </div>
           <div className="col-lg-12 portfolio-item">
             <h3>Pippity.io</h3>
-            <a href="https://pippity.io/"} target="_blank" rel="noopener noreferrer">
+            <a href="https://pippity.io/" target="_blank" rel="noopener noreferrer">
               <img src={Pippity} alt="placeholder" />
             </a>
           </div>
